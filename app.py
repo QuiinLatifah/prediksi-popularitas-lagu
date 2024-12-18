@@ -56,7 +56,7 @@ wordcloud = WordCloud(
 
 # Tampilkan WordCloud di sidebar
 st.sidebar.subheader(f"WordCloud Sentimen '{selected_sentiment.capitalize()}'")
-st.sidebar.image(wordcloud.to_array(), use_column_width=True)
+st.sidebar.image(wordcloud.to_array(), width=300)
 
 # Hitung 10 kata paling sering muncul untuk sentimen yang dipilih
 word_freq_filtered = Counter(all_words_filtered.split())
